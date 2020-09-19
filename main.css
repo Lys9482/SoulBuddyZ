@@ -1,1 +1,21 @@
+body{
+  text-align: center;
+}
+#title {
+  background-color: lightblue;
+}
+.facts {
+  color: red;
+  font-size: 2em;
+}
+.facts#color{
+  color:pink;
+}
+
+
+#post1{
+  width: 60%;
+  margin: auto;
+
+}
 
