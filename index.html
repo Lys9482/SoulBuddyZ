@@ -1,23 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Hack Book</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <h1>Tanisi</h1>
-  <img src="https://www.w3schools.com/w3css/img_lights.jpg">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Soul Buddy</title>
+    <link rel="icon" href= "Soul Buddy.png"  type= "image/x-icon">
+    <link rel="stylesheet" href="main.css">
+   
+  </head>
+  <body>
+      <div class="top-container"></div>
+    <h1>Soul Buddy</h1>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $("input[name=btnVent]").click(function () {
+            if ($(this).val() == "Yes") {
+                $("#dvVent").show();
+            } else {
+                $("#dvVent").hide();
+            }
+        });
+    });
+    </script>
+    <span>Do you want to vent?</span>
+    <input type="button" value="Yes" name = "btnVent" />
+    <input type="button" value="Close" name = "btnVent" />
+    <hr />
+    <div id="dvVent" style="display: none">
+        Don't overthink, let us know how you're feeling:
+        <input type="text" id="txtVent" />
+    </div>
+    
+    <ul>
+       
+     
+      <div class="navbar">
+        <li class="logo"><a href="index.html"><img src="Soul Buddy.png" width ="70" height="70" alt="Logo"></a></li>
+       <a href="index.html"> Home</a></li>
+       <a href="stress.html">Stress</a>
+       <a href="anxiety.html">Anxiety</a>
+      <a href="sleep.html">Sleep Deprivation</a>
+       <a href="depression.html">Depression</a>
+    </ul>
+</div>
+    
+    <div class="gallery">
+        <a target="_blank" href="stress.html">
+          <img src="stress.png" alt="stressPage" width="600" height="400">
+        </a>
+        <div class="desc"> A common issue many students battle with in school is stress.Now it is even more crucial since school is online. Students and teachers have to adapt to the virtual classroom. The De-Stress lounge offers remedies to ease stress </div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="anxiety.html">
+          <img src="anxiety.png" alt="anxietyPage" width="600" height="400">
+        </a>
+        <div class="desc">Anxiety battles are severe and need to be taken seriously.Now this is serious because people have to worry about work, health, school, and family </div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="sleep.html">
+          <img src="sleep.png" alt="sleepDeprPage" width="900" height="600">
+        </a>
+        <div class="desc">Make notice of the importance of sleep.Sleep is very important for one's health and people may not be getting it</div>
+      </div>
+      
+      <div class="gallery">
+        <a target="_blank" href="depression.html">
+          <img src="Depression.png" alt="depressionPage" width="600" height="400">
+        </a>
+        <div class="desc"> Many people suffer from depression because of family issues, school , and more.Want to acknowledge this condition and bring attention and coping mechanisms </div>
+      </div>
 
-  <p>Welcome to my hack book portfolio! I'm Tanisi :D</p>
-  <p>Birthday: August 3 2002</p>
-  <p>Fav color: Red</p>
-
-  <button type="button">Post</button>
-
-  <div>
-    <h3>Post number 1</h3>
-    <p>This is my first post</p>
-  </div>
-</body>
+    <script src="app.js"></script>
+    <noscript>You need to enable JavaScript to view the full site.</noscript>
+  </body>
 </html>
-
